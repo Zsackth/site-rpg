@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>rpg</title>
+        <style>
+            header{
+                background-color: #4A6B27;
+                color: #E7FF5D;
+                text-align: center;
+                border: 8px solid #682376;
+                padding: 16px;
+                
+            }
+            main{
+                background-color: #d1f3ac;
+                color: #3e4225;
+                max-width: 800px;
+                text-align: center;
+                margin: 0 auto;
+                border: 8px solid #d699e2;
+                padding: 16px;
+            }
+            article{
+
+            }
+            p{
+                  background-color: #829e65;
+                color: #f1ffa4;
+                max-width: 800px;
+                text-align: center;
+                margin: 0 auto;
+                padding: 16px;
+            }
+            img{
+                width: 80px;
+                height: 80px;
+            }
+            p{ 
+                font-weight:bold;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+        <h1>RPG e suas infinitas historias</h1>
+        <h>aqui, tudo sobre rpg ou ate mesmo basico dele, será compartilhado!</h>
+        </header>
+        <main>
+            <article>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF1Ryj7SST2BZ4DVM6q_cYBM-xaTselnWLlah2kvnHgg&s=10" alt=""Ilustração em pixel art de uma ficha de personagem de RPG antiga sobre uma mesa de madeira escura. Em cima da ficha, estão espalhados vários dados poliédricos coloridos, incluindo um d20 azul em destaque, um d6 vermelho, um d4 verde, um d8 amarelo e um d10 roxo."">
+                <h2>cap.1</h2>
+                <p>bem vindos e bem vindas! ao mundo feito de aventuras e magia!</p2>
+                <h3>neste primeiro capitulo, o principal a ser aprendido é
+                    "oque é rpg?"
+                </h3>
+                <p>A sigla RPG pode ter dois significados principais, dependendo do contexto em que é utilizada.O significado mais comum é Role-Playing Game (jogos de interpretação de papéis).</p>
+                <button>💚​ <span>0</span></button>
+                <button>🎃​​ <span>0</span></button>
+            </article>
+            <article> 
+                <img src="https://www.nerdloja.com/cdn/shop/files/S5631f2efb99849a695eb3a13d15b1bb5u_1024x1024.jpg?v=1696711429" alt=""Ilustração em pixel art de uma ficha de personagem de RPG antiga sobre uma mesa de madeira escura. Em cima da ficha, estão espalhados vários dados poliédricos coloridos, incluindo um d20 azul em destaque, um d6 vermelho, um d4 verde, um d8 amarelo e um d10 roxo."">
+               <h2>cap.2</h2>
+               <p>entendendo melhor a mecanica </p2>
+               <h3>no segunco capitulo, aprendemos de forma resumida a mecanica do rpg
+               </h3>
+               <p>Jogar um RPG (Role-Playing Game) é basicamente participar de um "faz de conta" organizado, onde você interpreta um personagem e cria uma história junto com seus amigos. Você só precisa de papel, lápis, dados (ou moedas) e imaginação</p>
+               <button>✔️​​ <span>0</span></button>
+               <button>❌​​ <span>0</span></button>
+            </article>
+             <article> 
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt2BnO83iZIrJ7VXPoB6ZRluG7heK4dahm0sOW5zBlGnBouSEjJndiuqE&s=10" alt=""Ilustração em pixel art de uma ficha de personagem de RPG antiga sobre uma mesa de madeira escura. Em cima da ficha, estão espalhados vários dados poliédricos coloridos, incluindo um d20 azul em destaque, um d6 vermelho, um d4 verde, um d8 amarelo e um d10 roxo."">
+               <h2>cap.3</h2>
+               <p>entendendo melhor a mecanica </p2>
+                <h3>no terceiro capitulo, aprendemos as mecanicas de personagens
+</h3>
+               <p>Os papéis dos personagens no RPG funcionam como divisões de tarefas e poderes dentro do grupo, destacando o tanque (protetor), o atacante (dano) e o suporte (cura) para que todos ajudem nas lutas e na história</p>
+               <button>🧿​​​ <span>0</span></button>
+               <button>⚠️​​​ <span>0</span></button>
+            </article>
+        </main>
+ </body>
+ <script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach( function(botao){
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado)
+        function botaoClicado(){
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            if(curtiu === false){
+                texto.textContent++;
+               curtiu = true;
+            }
+        }
+    })
+
+
+ </script>
+ </html>
